@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{B45CDCC0-B2A8-4085-82F2-8A6140427715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.ViewModel", "Catel.Templates\Catel.ItemTemplates.ViewModel\Catel.ItemTemplates.ViewModel.csproj", "{51B11D3E-CBC9-4FE6-8D23-7DAD6C4F97C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.ViewModel", "Catel.ItemTemplates.ViewModel\Catel.ItemTemplates.ViewModel.csproj", "{51B11D3E-CBC9-4FE6-8D23-7DAD6C4F97C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.WPF.DataWindow", "Catel.Templates\Catel.ItemTemplates.WPF.DataWindow\Catel.ItemTemplates.WPF.DataWindow.csproj", "{2121454C-07C0-4E51-A844-C0EF23EF87FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.WPF.DataWindow", "Catel.ItemTemplates.WPF.DataWindow\Catel.ItemTemplates.WPF.DataWindow.csproj", "{2121454C-07C0-4E51-A844-C0EF23EF87FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.WPF.UserControl", "Catel.Templates\Catel.ItemTemplates.WPF.UserControl\Catel.ItemTemplates.WPF.UserControl.csproj", "{0720AC77-238B-4B90-AFF4-893870F836E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.WPF.UserControl", "Catel.ItemTemplates.WPF.UserControl\Catel.ItemTemplates.WPF.UserControl.csproj", "{0720AC77-238B-4B90-AFF4-893870F836E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ProjectTemplates.WPF.Application", "Catel.Templates\Catel.ProjectTemplates.WPF.Application\Catel.ProjectTemplates.WPF.Application.csproj", "{A354CA4C-F74A-4A33-83D4-57614D47B2D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ProjectTemplates.WPF.Application", "Catel.ProjectTemplates.WPF.Application\Catel.ProjectTemplates.WPF.Application.csproj", "{A354CA4C-F74A-4A33-83D4-57614D47B2D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
