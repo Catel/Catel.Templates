@@ -1,0 +1,22 @@
+﻿<catelcontrols:UserControl x:Class="$rootnamespace$.$safeitemname$"
+                           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                           xmlns:catelcontrols="using:Catel.Windows.Controls"
+                           x:DefaultBindMode="OneWay"
+                           mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="__catelInnerWrapper">
+        <!-- 
+        
+            Put the user control content here.
+        
+            Use x:Bind against any VM property:
+        
+            <TextBlock Text="{x:Bind VM.Title}" />
+            
+        -->
+    </Grid>
+    
+</catelcontrols:UserControl>
