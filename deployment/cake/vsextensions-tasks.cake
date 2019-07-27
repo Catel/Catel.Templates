@@ -104,12 +104,12 @@ private void BuildVsExtensions()
         // are properties passed in using the command line)
         var outputDirectory = GetProjectOutputDirectory(vsExtension);
         Information("Output directory: '{0}'", outputDirectory);
-        msBuildSettings.WithProperty("OverridableOutputPath", outputDirectory);
-        msBuildSettings.WithProperty("PackageOutputPath", OutputRootDirectory);
 
         // Since vs extensions (for now) use the old csproj style, make sure
         // to override the output path as well
-        msBuildSettings.WithProperty("OutputPath", OutputRootDirectory);
+        // msBuildSettings.WithProperty("OverridableOutputPath", outputDirectory);
+        // msBuildSettings.WithProperty("PackageOutputPath", OutputRootDirectory);
+        msBuildSettings.WithProperty("OutputPath", outputDirectory);
 
         MSBuild(projectFileName, msBuildSettings);
     }
@@ -136,6 +136,9 @@ private async Task DeployVsExtensionsAsync()
         return;
     }
 
+    var vsixPublisherExeDirectory = string.Format(@"{0}\VSSDK\VisualStudioIntegration\Tools\Bin", GetVisualStudioDirectory());
+    var vsixPublisherExeFileName = string.Format(@"{0}\VsixPublisher.exe", vsixPublisherExeDirectory);
+
     foreach (var vsExtension in VsExtensions)
     {
         if (!ShouldDeployProject(vsExtension))
@@ -146,10 +149,25 @@ private async Task DeployVsExtensionsAsync()
 
         LogSeparator("Deploying vs extension '{0}'", vsExtension);
 
-        // var packageToPush = string.Format("{0}/{1}.{2}.nupkg", OutputRootDirectory, tool, VersionNuGet);
-        // var nuGetRepositoryUrls = GetToolsNuGetRepositoryUrls(tool);
-        // var nuGetRepositoryApiKeys = GetToolsNuGetRepositoryApiKeys(tool);
+        var vsExtensionOutputDirectory = GetProjectOutputDirectory(vsExtension);
+        var payloadFileName = string.Format(@"{0}\{1}.vsix", vsExtensionOutputDirectory, vsExtension);
 
+        var overviewSourceFileName = string.Format(@"src\{0}\overview.md", vsExtension);
+        var overviewTargetFileName = string.Format(@"{0}\overview.md", vsExtensionOutputDirectory);
+        CopyFile(overviewSourceFileName, overviewTargetFileName);
+
+        var vsGalleryManifestSourceFileName = string.Format(@"src\{0}\source.extension.vsgallerymanifest", vsExtension);
+        var vsGalleryManifestTargetFileName = string.Format(@"{0}\source.extension.vsgallerymanifest", vsExtensionOutputDirectory);
+        CopyFile(vsGalleryManifestSourceFileName, vsGalleryManifestTargetFileName);
+
+        StartProcess(vsixPublisherExeFileName, new ProcessSettings 
+        {
+            Arguments = new ProcessArgumentBuilder()
+                .Append("publish")
+                .AppendSwitch("-payload", payloadFileName)
+                .AppendSwitch("-publishManifest", vsGalleryManifestTargetFileName)
+                .AppendSwitchSecret("-personalAccessToken", VsExtensionsPersonalAccessToken)
+        });
 
         await NotifyAsync(vsExtension, string.Format("Deployed to Visual Studio Gallery"), TargetType.VsExtension);
     }
