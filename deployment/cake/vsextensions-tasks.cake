@@ -47,6 +47,10 @@ private void UpdateInfoForVsExtensions()
         return;
     }
 
+    // Note: since we can't use prerelease tags in VSIX, we will use the commit count
+    // as last part of the version
+    var version = string.Format("{0}.{1}", VersionMajorMinorPatch, VersionCommitsSinceVersionSourcePadded);
+
     foreach (var vsExtension in VsExtensions)
     {
         Information("Updating version for vs extension '{0}'", vsExtension);
@@ -58,7 +62,7 @@ private void UpdateInfoForVsExtensions()
 
         TransformConfig(vsixManifestFileName, new TransformationCollection 
         {
-            { "PackageManifest/Metadata/Identity/@Version", VersionMajorMinorPatch },
+            { "PackageManifest/Metadata/Identity/@Version", version },
             { "PackageManifest/Metadata/Identity/@Publisher", VsExtensionsPublisherName }
         });
 
