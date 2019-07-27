@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="Catel.ProjectTemplates.WPF.Application..8bf1e76e-dc4f-4ca6-aae7-c5a038d85f2a" Version="5.1.0-alpha0007" Language="en-US" Publisher="[PUBLISHER]" />
-    <DisplayName>WPF application using Catel</DisplayName>
+    <Identity Id="Catel.ProjectTemplates.WPF.Application..957f7b56-3fbe-4b24-8257-6f59d6b890de" Version="5.1.0-alpha0007" Language="en-US" Publisher="[PUBLISHERNAME]" />
+    <DisplayName>Catel - WPF - Application</DisplayName>
     <Description xml:space="preserve">Project template to create an MVVM-based application for WPF using Catel.</Description>
     <MoreInfo>https://www.catelproject.com</MoreInfo>
     <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>

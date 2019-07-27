@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Catel.ItemTemplates.WPF.DataWindow..ec0f239b-dde2-4e47-9c7d-635451b95a6a" Version="5.0" Language="en-US" Publisher="[PUBLISHERNAME]" />
+        <Identity Id="Catel.ItemTemplates.WPF.DataWindow..aaea9597-da2b-4847-8911-708a62e661fa" Version="5.0" Language="en-US" Publisher="[PUBLISHERNAME]" />
         <DisplayName>Catel - WPF - DataWindow</DisplayName>
         <Description xml:space="preserve">Item template to create a WPF DataWindow using Catel.</Description>
         <MoreInfo>https://www.catelproject.com</MoreInfo>

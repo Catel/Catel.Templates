@@ -49,7 +49,7 @@ private void UpdateInfoForVsExtensions()
 
     // Note: since we can't use prerelease tags in VSIX, we will use the commit count
     // as last part of the version
-    var version = string.Format("{0}.{1}", VersionMajorMinorPatch, VersionCommitsSinceVersionSourcePadded);
+    var version = string.Format("{0}.{1}", VersionMajorMinorPatch, VersionCommitsSinceVersionSource);
 
     foreach (var vsExtension in VsExtensions)
     {

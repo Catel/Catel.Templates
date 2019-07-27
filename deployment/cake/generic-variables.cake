@@ -107,10 +107,10 @@ if (VersionNuGet == "unknown")
     VersionMajorMinorPatch = gitVersion.MajorMinorPatch;
     VersionFullSemVer = gitVersion.FullSemVer;
     VersionNuGet = gitVersion.NuGetVersionV2;
-    VersionCommitsSinceVersionSource = gitVersion.CommitsSinceVersionSource;
+    VersionCommitsSinceVersionSource = (gitVersion.CommitsSinceVersionSource ?? 0).ToString();
 }
 
-Information("Defined version: '{0}', commits since version source: '{1}'", VersionFullSemVer, CommitsSinceVersionSource);
+Information("Defined version: '{0}', commits since version source: '{1}'", VersionFullSemVer, VersionCommitsSinceVersionSource);
 
 if (string.IsNullOrWhiteSpace(RepositoryCommitId))
 {
