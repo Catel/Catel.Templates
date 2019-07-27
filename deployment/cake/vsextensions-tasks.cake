@@ -170,7 +170,7 @@ private async Task DeployVsExtensionsAsync()
                 .Append("publish")
                 .AppendSwitch("-payload", payloadFileName)
                 .AppendSwitch("-publishManifest", vsGalleryManifestTargetFileName)
-                .AppendSwitch("-personalAccessToken", VsExtensionsPersonalAccessToken)
+                .AppendSwitchSecret("-personalAccessToken", VsExtensionsPersonalAccessToken)
         });
 
         await NotifyAsync(vsExtension, string.Format("Deployed to Visual Studio Gallery"), TargetType.VsExtension);
