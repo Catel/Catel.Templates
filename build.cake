@@ -24,12 +24,9 @@ Parameters["UseVisualStudioPrerelease"] = "true";
 // DEFINE COMPONENTS TO BUILD / PACKAGE
 //=======================================================
 
-//Components.Add("Catel.Core");
-//Components.Add("Catel.MVVM");
-//Components.Add("Catel.MVVM.Xamarin.Forms");
-//Components.Add("Catel.Serialization.Json");
+VsExtensions.Add("Catel.ProjectTemplates.WPF.Application");
 
-TestProjects.Add(string.Format("{0}.Tests", GetBuildServerVariable("SolutionName")));
+//TestProjects.Add(string.Format("{0}.Tests", GetBuildServerVariable("SolutionName")));
 
 //=======================================================
 // REQUIRED INITIALIZATION, DO NOT CHANGE

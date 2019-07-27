@@ -14,6 +14,8 @@ public enum TargetType
 
     UwpApp,
 
+    VsExtension,
+
     WebApp,
 
     WpfApp
