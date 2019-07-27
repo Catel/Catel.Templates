@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="Catel.ItemTemplates.WPF.DataWindow..ec0f239b-dde2-4e47-9c7d-635451b95a6a" Version="5.0" Language="en-US" Publisher="[PUBLISHERNAME]" />
-        <DisplayName>WPF DataWindow using Catel</DisplayName>
+        <DisplayName>Catel - WPF - DataWindow</DisplayName>
         <Description xml:space="preserve">Item template to create a WPF DataWindow using Catel.</Description>
         <MoreInfo>https://www.catelproject.com</MoreInfo>
         <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>

@@ -24,6 +24,11 @@ Parameters["UseVisualStudioPrerelease"] = "true";
 // DEFINE COMPONENTS TO BUILD / PACKAGE
 //=======================================================
 
+VsExtensions.Add("Catel.ItemTemplates.ViewModel");
+
+VsExtensions.Add("Catel.ItemTemplates.WPF.DataWindow");
+VsExtensions.Add("Catel.ItemTemplates.WPF.UserControl");
+
 VsExtensions.Add("Catel.ProjectTemplates.WPF.Application");
 
 //TestProjects.Add(string.Format("{0}.Tests", GetBuildServerVariable("SolutionName")));
