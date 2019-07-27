@@ -107,6 +107,10 @@ private void BuildVsExtensions()
         msBuildSettings.WithProperty("OverridableOutputPath", outputDirectory);
         msBuildSettings.WithProperty("PackageOutputPath", OutputRootDirectory);
 
+        // Since vs extensions (for now) use the old csproj style, make sure
+        // to override the output path as well
+        msBuildSettings.WithProperty("OutputPath", OutputRootDirectory);
+
         MSBuild(projectFileName, msBuildSettings);
     }
 }
