@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <TemplateID>Orchestra.Shell.MahApps.Application.CSharp</TemplateID>
-    <Name>WPF Application using Catel and the MahApps shell from Orchestra.</Name>
+    <TemplateID>Orchestra.Ribbon.Fluent.Application.CSharp</TemplateID>
+    <Name>WPF Application using Catel and the Fluent.Ribbon shell from Orchestra.</Name>
     <Description>A multi-targeting (.NET 4.6 and .NET Core 3.0) project for creating a WPF application.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
@@ -18,12 +18,12 @@
   </TemplateData>
   <TemplateContent>
     <CustomParameters>
-      <CustomParameter Name="$TemplateName$" Value="Orchestra.Shell.MahApps" />
+      <CustomParameter Name="$TemplateName$" Value="Orchestra.Shell.Ribbon.Fluent" />
       <CustomParameter Name="$MsBuildSdkExtrasVersion$" Value="2.0.54" />
       <CustomParameter Name="$CatelVersion$" Value="5.11.2" />
-      <CustomParameter Name="$OrchestraVersion$" Value="5.3.0-alpha0297" />
+      <CustomParameter Name="$OrchestraVersion$" Value="5.3.0-alpha0296" />
     </CustomParameters>
-    <Project TargetFileName="$safeprojectname$.csproj" File="Orchestra.Shell.MahApps.Application.csproj" ReplaceParameters="true">
+    <Project TargetFileName="$safeprojectname$.csproj" File="Orchestra.Ribbon.Fluent.Application.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
@@ -54,18 +54,21 @@
       <Folder Name="Services" TargetFolderName="Services">
         <ProjectItem ReplaceParameters="true" TargetFileName="AboutInfoService.cs">AboutInfoService.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationInitializationService.cs">ApplicationInitializationService.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="MahAppsService.cs">MahAppsService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RibbonService.cs">RibbonService.cs</ProjectItem>
       </Folder>
       <Folder Name="Themes" TargetFolderName="Themes">
         <ProjectItem ReplaceParameters="true" TargetFileName="Generic.xaml">Generic.xaml</ProjectItem>
       </Folder>
       <Folder Name="ViewModels" TargetFolderName="ViewModels">
         <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RibbonViewModel.cs">RibbonViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="StatusBarViewModel.cs">StatusBarViewModel.cs</ProjectItem>
       </Folder>
       <Folder Name="Views" TargetFolderName="Views">
         <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml">MainView.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml.cs">MainView.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RibbonView.xaml">RibbonView.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RibbonView.xaml.cs">RibbonView.xaml.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="StatusBarView.xaml">StatusBarView.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="StatusBarView.xaml.cs">StatusBarView.xaml.cs</ProjectItem>
       </Folder>

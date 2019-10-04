@@ -29,13 +29,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <SchemaVersion>2.0</SchemaVersion>   
+    <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{EFBC96D4-3601-4D99-BF62-020C078597D1}</ProjectGuid>
+    <ProjectGuid>{FA96EC3A-70E1-4A14-BE99-A663077567D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Orchestra.ProjectTemplates.Shell.MahApps.Application</RootNamespace>
-    <AssemblyName>Orchestra.ProjectTemplates.Shell.MahApps.Application</AssemblyName>
+    <RootNamespace>Orchestra.ProjectTemplates.Ribbon.Fluent.Application</RootNamespace>
+    <AssemblyName>Orchestra.ProjectTemplates.Ribbon.Fluent.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -65,7 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ProjectTemplates\CSharp\Windows\Orchestra.Shell.MahApps.Application.zip">
+    <Content Include="ProjectTemplates\CSharp\Windows\Orchestra.Ribbon.Fluent.Application.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
