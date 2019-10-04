@@ -1,22 +1,29 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>WPF Application with Catel</Name>
-    <Description>A project for creating a WPF application using the Catel framework.</Description>
-    <ProjectType>CSharp</ProjectType>
-    <TemplateGroupID>Windows</TemplateGroupID>
     <TemplateID>Catel.WPF.Application.CSharp</TemplateID>
-    <RequiredFrameworkVersion>3.0</RequiredFrameworkVersion>
+    <Name>WPF Application with Catel</Name>
+    <Description>A multi-targeting (.NET 4.6 and .NET Core 3.0) project for creating a WPF application using the Catel framework.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <TemplateGroupID>Windows</TemplateGroupID>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>WPFApplication</DefaultName>
+    <DefaultName>MyCatelApplication</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Catel.WPF.Application" />
+      <CustomParameter Name="$MsBuildSdkExtrasVersion$" Value="2.0.54" />
+      <CustomParameter Name="$CatelVersion$" Value="5.11.2" />
+    </CustomParameters>
     <Project TargetFileName="$safeprojectname$.csproj" File="Catel.WPF.Application.csproj" ReplaceParameters="true">
-    <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
@@ -29,8 +36,11 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
-      <Folder Name="Models" TargetFolderName="Models">
-    </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <Folder Name="Icons" TargetFolderName="Icons">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Logo.ico">Logo.ico</ProjectItem>
+        </Folder>
+      </Folder>
       <Folder Name="ViewModels" TargetFolderName="ViewModels">
         <ProjectItem ReplaceParameters="true" TargetFileName="MainWindowViewModel.cs">MainWindowViewModel.cs</ProjectItem>
       </Folder>

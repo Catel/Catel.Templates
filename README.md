@@ -3,6 +3,14 @@ Catel.Templates
 
 This repository contains the item and project templates for Catel.
 
+## How to ensure local templates show up
+
+Open the Visual Studio command prompt in administrator mode and run the command below:
+
+```
+devenv /installvstemplates
+```
+
 ## How to contribute?
 
 We love improvements to the templates via contributions. Below

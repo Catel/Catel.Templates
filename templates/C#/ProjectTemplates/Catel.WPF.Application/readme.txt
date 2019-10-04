@@ -1,5 +1,5 @@
-Catel project template readme
-=============================
+$TemplateName$ project template readme
+================================================================================================
 
 Congratulations with creating a new Catel project:
 
@@ -7,19 +7,21 @@ $safeprojectname$
 
 
 ================================================================================================
-IMPORTANT NOTES -- READ THIS !!!
+IMPORTANT NOTES !!! READ THIS !!! READ THIS !!! READ THIS !!! READ THIS !!! READ THIS !!!
 ================================================================================================
 
 ------------------------------------------------------------------------------------------------
 1. MsBuildSdkExtras
 ------------------------------------------------------------------------------------------------
 
-This project template uses MsBuildSdkExtras (see https://github.com/onovotny/MSBuildSdkExtras). You
-can define the version of this library by adding a file named `global.json` with the following content: 
+This project template uses MsBuildSdkExtras (see https://github.com/onovotny/MSBuildSdkExtras) with 
+a fixed value inside the csproj itself (otherwise the project template system will error). You can 
+define a solution-wide version of this library by adding a file named `global.json` in the same 
+directory as the `.sln` with the following content: 
 
 {
     "msbuild-sdks": {
-        "MSBuild.Sdk.Extras": "2.0.24"
+        "MSBuild.Sdk.Extras": "$MsBuildSdkExtrasVersion$"
     }
 }
 
@@ -46,6 +48,9 @@ This template is designed to work with RepositoryTemplate (see https://github.co
 
 This repository template allows any user to keep the generic deployment / solution files in sync with the
 latest standards and allows for easy packaging and deployment.
+
+The generated project file contains fallback values in case the repository template cannot be found
+in order to make sure the initially created project compiles.
 
 
 ------------------------------------------------------------------------------------------------
@@ -92,7 +97,7 @@ will be weaved into:
     public static readonly PropertyData NameProperty = RegisterProperty("Name", typeof(string));
 
     
-For more information, visit http://www.catelproject.com/tools/catel-fody/
+For more information, visit https://www.catelproject.com/tools/catel-fody/
 
 
 ------------------------------------------------------------------------------------------------

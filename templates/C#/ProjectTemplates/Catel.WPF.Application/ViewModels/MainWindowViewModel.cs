@@ -9,7 +9,7 @@
         {
         }
 
-        public override string Title { get { return "$safeprojectname$"; } }
+        public override string Title { get { return "Welcome to $safeprojectname$"; } }
         
         // TODO: Register models with the vmpropmodel codesnippet
         // TODO: Register view model properties with the vmprop or vmpropviewmodeltomodel codesnippets
