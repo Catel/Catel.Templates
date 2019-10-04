@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29319.158
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B09C428A-35DF-4A53-A724-ADA654CC21F1}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ItemTemplates.WPF.UserControl", "Catel.ItemTemplates.WPF.UserControl\Catel.ItemTemplates.WPF.UserControl.csproj", "{0720AC77-238B-4B90-AFF4-893870F836E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.ProjectTemplates.WPF.Application", "Catel.ProjectTemplates.WPF.Application\Catel.ProjectTemplates.WPF.Application.csproj", "{A354CA4C-F74A-4A33-83D4-57614D47B2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestra.ProjectTemplates.Shell.MahApps.Application", "Orchestra.ProjectTemplates.Shell.MahApps.Application\Orchestra.ProjectTemplates.Shell.MahApps.Application.csproj", "{EFBC96D4-3601-4D99-BF62-020C078597D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application", "Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application\Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application.csproj", "{FA96EC3A-70E1-4A14-BE99-A663077567D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{A354CA4C-F74A-4A33-83D4-57614D47B2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A354CA4C-F74A-4A33-83D4-57614D47B2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A354CA4C-F74A-4A33-83D4-57614D47B2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBC96D4-3601-4D99-BF62-020C078597D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBC96D4-3601-4D99-BF62-020C078597D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBC96D4-3601-4D99-BF62-020C078597D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFBC96D4-3601-4D99-BF62-020C078597D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA96EC3A-70E1-4A14-BE99-A663077567D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA96EC3A-70E1-4A14-BE99-A663077567D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA96EC3A-70E1-4A14-BE99-A663077567D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA96EC3A-70E1-4A14-BE99-A663077567D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +58,8 @@ Global
 		{2121454C-07C0-4E51-A844-C0EF23EF87FF} = {B45CDCC0-B2A8-4085-82F2-8A6140427715}
 		{0720AC77-238B-4B90-AFF4-893870F836E7} = {B45CDCC0-B2A8-4085-82F2-8A6140427715}
 		{A354CA4C-F74A-4A33-83D4-57614D47B2D0} = {B09C428A-35DF-4A53-A724-ADA654CC21F1}
+		{EFBC96D4-3601-4D99-BF62-020C078597D1} = {B09C428A-35DF-4A53-A724-ADA654CC21F1}
+		{FA96EC3A-70E1-4A14-BE99-A663077567D2} = {B09C428A-35DF-4A53-A724-ADA654CC21F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F7945A1A-1CB6-488D-A049-F28BB76F480B}

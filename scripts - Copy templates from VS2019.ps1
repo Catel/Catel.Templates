@@ -2,7 +2,7 @@
 # %documents%\Visual Studio 2019\Templates to the /templates
 # directory so they can be checked in into source control
 
-$projectTemplates = "Catel.WPF.Application"
+$projectTemplates = "Catel.WPF.Application", "Orchestra.Shell.MahApps.Application", "Orchestra.Shell.Ribbon.Fluent.Application"
 $itemTemplates = "Catel.ViewModel", "Catel.WPF.DataWindow", "Catel.WPF.UserControl"
 
 $vsVersion = "2019"

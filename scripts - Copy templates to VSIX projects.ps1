@@ -3,6 +3,8 @@
 
 $projectTemplates = @{
     "Catel.WPF.Application" = "Catel.ProjectTemplates.WPF.Application\ProjectTemplates\CSharp\Windows\";
+    "Orchestra.Shell.MahApps.Application" = "Orchestra.ProjectTemplates.Shell.MahApps.Application\ProjectTemplates\CSharp\Windows\";
+    "Orchestra.Shell.Ribbon.Fluent.Application" = "Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application\ProjectTemplates\CSharp\Windows\";
  }
 
 $itemTemplates = @{
