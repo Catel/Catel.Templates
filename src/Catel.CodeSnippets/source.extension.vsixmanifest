@@ -12,8 +12,6 @@
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,17.0)" />
-    <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
-    <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
   </Installation>
   <Dependencies></Dependencies>
   <Assets>
