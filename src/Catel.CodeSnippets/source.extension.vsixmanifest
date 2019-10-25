@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Catel.CodeSnippets..d1928758-7da4-4ef9-9b6b-788fa036a52f" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
+    <DisplayName>Catel - code snippets</DisplayName>
+    <Description xml:space="preserve">Code snippets for Catel.</Description>
+    <MoreInfo>https://www.catelproject.com</MoreInfo>
+    <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__Catel_logo_large.png</PreviewImage>
+    <Tags>catel;snippets</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,17.0)" />
+    <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
+    <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+  </Installation>
+  <Dependencies></Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Snippets\snippets.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26606.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>

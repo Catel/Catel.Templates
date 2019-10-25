@@ -24,6 +24,8 @@ Parameters["UseVisualStudioPrerelease"] = "true";
 // DEFINE COMPONENTS TO BUILD / PACKAGE
 //=======================================================
 
+VsExtensions.Add("Catel.CodeSnippets");
+
 VsExtensions.Add("Catel.ItemTemplates.ViewModel");
 
 VsExtensions.Add("Catel.ItemTemplates.WPF.DataWindow");
