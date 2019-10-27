@@ -4,7 +4,7 @@
 
 $vsVersion = "2019"
 $vsName = "Visual Studio " + $vsVersion
-$vsSnippetsPath = [Environment]::GetFolderPath('MyDocuments') + "\" + $vsName + "\Code Snippets\Visual C#\Catel\"
+$vsSnippetsPath = [Environment]::GetFolderPath('MyDocuments') + "\" + $vsName + "\Code Snippets\Visual C#\My Code Snippets\Catel\"
 $sourceDirectory = "snippets\C#\"
 
 $snippets = Get-ChildItem -Path $sourceDirectory -File -Name
