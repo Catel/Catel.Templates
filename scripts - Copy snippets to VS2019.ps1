@@ -11,6 +11,8 @@ $snippets = Get-ChildItem -Path $sourceDirectory -File -Name
 
 Write-Host Using snippets path: $vsSnippetsPath
 
+[system.io.directory]::CreateDirectory($vsSnippetsPath)
+
 foreach ($snippet in $snippets)
 {
     $source = $sourceDirectory + $snippet
