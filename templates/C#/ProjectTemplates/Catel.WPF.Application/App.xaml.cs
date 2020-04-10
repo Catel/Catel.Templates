@@ -1,9 +1,7 @@
 ﻿namespace $safeprojectname$
 {
     using System.Windows;
-    
-    using Catel.ApiCop;
-    using Catel.ApiCop.Listeners;
+
     using Catel.IoC;
     using Catel.Logging;
     using Catel.Reflection;
@@ -44,15 +42,6 @@
             Log.Info("Calling base.OnStartup");
             
             base.OnStartup(e);
-        }    
-        
-        protected override void OnExit(ExitEventArgs e)
-        {
-            // Get advisory report in console
-            ApiCopManager.AddListener(new ConsoleApiCopListener());
-            ApiCopManager.WriteResults();
-            
-            base.OnExit(e);
         }
     }
 }
