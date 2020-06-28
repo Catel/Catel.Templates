@@ -13,11 +13,6 @@
         <Snippet>
             <Declarations>
                 <Literal>
-                    <ID>description</ID>
-                    <ToolTip>Description of the property</ToolTip>
-                    <Default>Gets or sets the property value</Default>
-                </Literal>
-                <Literal>
                     <ID>modelname</ID>
                     <ToolTip>Name of the property that holds the model and is decorated with the Model attribute</ToolTip>
                     <Default>model</Default>
@@ -43,6 +38,14 @@ public $type$ $name$
 
 public static readonly PropertyData $name$Property = RegisterProperty(nameof($name$), typeof($type$));]]>
             </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Catel.MVVM</Namespace>
+                </Import>
+                <Import>
+                    <Namespace>Catel.Data</Namespace>
+                </Import>
+            </Imports>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>
