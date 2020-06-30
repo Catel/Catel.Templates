@@ -8,7 +8,7 @@
     <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>
     <Icon>__TemplateIcon.ico</Icon>
     <PreviewImage>__Catel_logo_large.png</PreviewImage>
-    <Tags>catel snippets</Tags>
+    <Tags>catel,snippets</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,17.0)" />
