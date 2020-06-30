@@ -17,11 +17,6 @@
                     <ToolTip>Name of the command</ToolTip>
                     <Default>name</Default>
                 </Literal>					
-                <Literal>
-                    <ID>type</ID>
-                    <ToolTip>Type of the property</ToolTip>
-                    <Default>type</Default>
-                </Literal>
             </Declarations>
             <Code Language="csharp">
                 <![CDATA[public Command $name$ { get; private set; }
@@ -40,6 +35,11 @@ private void On$name$Execute()
     // TODO: Handle command logic here
 }]]>
             </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Catel.MVVM</Namespace>
+                </Import>
+            </Imports>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>

@@ -19,23 +19,21 @@
                 </Literal>
             </Declarations>
             <Code Language="csharp">
-                <![CDATA[#if NET
-[Serializable]
-#endif
+                <![CDATA[[Serializable]
 public class $name$ : ModelBase
 {
     public $name$()
     { 
     }
 
-#if NET
-    protected $name$(SerializationInfo info, StreamingContext context)
-        : base(info, context) { /* required for serialization */ }
-#endif
-
     // TODO: Define your custom properties here using the 'modelprop' code snippet
 }]]>
             </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Catel.Data</Namespace>
+                </Import>
+            </Imports>
         </Snippet>
     </CodeSnippet>
 </CodeSnippets>
