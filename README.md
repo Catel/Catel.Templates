@@ -3,6 +3,8 @@ Catel.Templates
 
 This repository contains the item and project templates for Catel.
 
+The easiest way to get the code snippets is by installing them via the <a href="https://marketplace.visualstudio.com/items?itemName=Catel.Catel-CodeSnippets" target="_blank">Visual Studio Marketplace</a>.
+
 ## Code Snippets
 
 ### Log
