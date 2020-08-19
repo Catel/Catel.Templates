@@ -2,7 +2,7 @@
   <TemplateData>
     <TemplateID>Catel.WPF.Application.CSharp</TemplateID>
     <Name>WPF Application with Catel</Name>
-    <Description>A multi-targeting (.NET 4.6 and .NET Core 3.0) project for creating a WPF application using the Catel framework.</Description>
+    <Description>A .NET Core 3.1 project template for creating a WPF application using the Catel framework.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -20,7 +20,7 @@
     <CustomParameters>
       <CustomParameter Name="$TemplateName$" Value="Catel.WPF.Application" />
       <CustomParameter Name="$MsBuildSdkExtrasVersion$" Value="2.0.54" />
-      <CustomParameter Name="$CatelVersion$" Value="5.11.2" />
+      <CustomParameter Name="$CatelVersion$" Value="5.12.8" />
     </CustomParameters>
     <Project TargetFileName="$safeprojectname$.csproj" File="Catel.WPF.Application.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
