@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Catel.ItemTemplates.WPF.DataWindow..aaea9597-da2b-4847-8911-708a62e661fa" Version="5.0" Language="en-US" Publisher="[PUBLISHERNAME]" />
+        <Identity Id="Catel.ItemTemplates.WPF.DataWindow..aaea9597-da2b-4847-8911-708a62e661fa" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
         <DisplayName>Catel - WPF - DataWindow</DisplayName>
         <Description xml:space="preserve">Item template to create a WPF DataWindow using Catel.</Description>
         <MoreInfo>https://www.catelproject.com</MoreInfo>
@@ -10,9 +10,15 @@
         <PreviewImage>__Catel_logo_large.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,17.0)" />
-        <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinExpress" />
-        <InstallationTarget Version="[11.0,17.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.VSWinExpress">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.VSWinDesktopExpress">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
     </Installation>
     <Dependencies>
     </Dependencies>
@@ -20,6 +26,6 @@
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" d:TargetPath="ItemTemplates\CSharp\WPF\Catel.WPF.DataWindow.zip" />
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[15.0.26621.2,17.0)" DisplayName=".NET desktop development tools" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[16.0,)" DisplayName=".NET desktop development tools" />
     </Prerequisites>
 </PackageManifest>
