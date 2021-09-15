@@ -8,7 +8,7 @@ Parameters["SolutionName"] = "Catel.Templates";
 Parameters["Company"] = "CatenaLogic";
 Parameters["RepositoryUrl"] = string.Format("https://github.com/{0}/{1}", GetBuildServerVariable("SolutionName"), GetBuildServerVariable("SolutionName"));
 Parameters["StartYear"] = "2010";
-Parameters["UseVisualStudioPrerelease"] = "false";
+Parameters["UseVisualStudioPrerelease"] = "true";
 Parameters["SourceLinkDisabled"] = "true";
 
 // Note: the rest of the variables should be coming from the build server,
