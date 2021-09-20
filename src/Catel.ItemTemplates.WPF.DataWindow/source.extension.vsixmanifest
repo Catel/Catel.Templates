@@ -10,21 +10,21 @@
         <PreviewImage>__Catel_logo_large.png</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,18.0)" >
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)" >
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
 
-        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,18.0)" >
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,17.0)" >
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[17.0,18.0)">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
 
-        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,18.0)" >
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,17.0)" >
             <ProductArchitecture>x86</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[17.0,18.0)">

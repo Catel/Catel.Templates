@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application..10f43467-b01c-43b5-96bd-3c68820bd716" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
-    <DisplayName>Orchestra - WPF - Fluent.Ribbon Application</DisplayName>
-    <Description xml:space="preserve">WPF Application using Catel and the Fluent.Ribbon shell from Orchestra.</Description>
-    <MoreInfo>https://github.com/wildgums/orchestra</MoreInfo>
-    <GettingStartedGuide>https://github.com/wildgums/orchestra</GettingStartedGuide>
-    <Icon>__TemplateIcon.ico</Icon>
-    <PreviewImage>__Catel_logo_large.png</PreviewImage>
-    <Tags>catel;mvvm;application;wpf;orchestra;fluent;ribbon;shell</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
+    <Metadata>
+        <Identity Id="Orchestra.ProjectTemplates.Shell.Ribbon.Fluent.Application..10f43467-b01c-43b5-96bd-3c68820bd716" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
+        <DisplayName>Orchestra - WPF - Fluent.Ribbon Application</DisplayName>
+        <Description xml:space="preserve">WPF Application using Catel and the Fluent.Ribbon shell from Orchestra.</Description>
+        <MoreInfo>https://github.com/wildgums/orchestra</MoreInfo>
+        <GettingStartedGuide>https://github.com/wildgums/orchestra</GettingStartedGuide>
+        <Icon>__TemplateIcon.ico</Icon>
+        <PreviewImage>__Catel_logo_large.png</PreviewImage>
+        <Tags>catel;mvvm;application;wpf;orchestra;fluent;ribbon;shell</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
 
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
 
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
-  </Installation>
-  <Dependencies></Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Windows\Orchestra.Ribbon.Fluent.Application.zip" />
-  </Assets>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[16.0,)" DisplayName=".NET desktop development tools" />
-  </Prerequisites>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies/>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Windows\Orchestra.Ribbon.Fluent.Application.zip" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[16.0,)" DisplayName=".NET desktop development tools" />
+    </Prerequisites>
 </PackageManifest>

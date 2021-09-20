@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="Catel.ProjectTemplates.WPF.Application..957f7b56-3fbe-4b24-8257-6f59d6b890de" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
-    <DisplayName>Catel - WPF - Application</DisplayName>
-    <Description xml:space="preserve">Project template to create an MVVM-based application for WPF using Catel.</Description>
-    <MoreInfo>https://www.catelproject.com</MoreInfo>
-    <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>
-    <Icon>__TemplateIcon.ico</Icon>
-    <PreviewImage>__Catel_logo_large.png</PreviewImage>
-    <Tags>catel;mvvm;application;wpf</Tags>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
+    <Metadata>
+        <Identity Id="Catel.ProjectTemplates.WPF.Application..957f7b56-3fbe-4b24-8257-6f59d6b890de" Version="5.1.0.12" Language="en-US" Publisher="[PUBLISHERNAME]" />
+        <DisplayName>Catel - WPF - Application</DisplayName>
+        <Description xml:space="preserve">Project template to create an MVVM-based application for WPF using Catel.</Description>
+        <MoreInfo>https://www.catelproject.com</MoreInfo>
+        <GettingStartedGuide>https://www.catelproject.com</GettingStartedGuide>
+        <Icon>__TemplateIcon.ico</Icon>
+        <PreviewImage>__Catel_logo_large.png</PreviewImage>
+        <Tags>catel;mvvm;application;wpf</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
 
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinExpress" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
 
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,18.0)" >
-      <ProductArchitecture>x86</ProductArchitecture>
-    </InstallationTarget>
-    <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[17.0,18.0)">
-      <ProductArchitecture>amd64</ProductArchitecture>
-    </InstallationTarget>
-  </Installation>
-  <Dependencies></Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Windows\Catel.WPF.Application.zip" />
-  </Assets>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[16.0,)" DisplayName=".NET desktop development tools" />
-  </Prerequisites>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[16.0,17.0)" >
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.VSWinDesktopExpress" Version="[17.0,18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies/>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\CSharp\Windows\Catel.WPF.Application.zip" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites" Version="[16.0,)" DisplayName=".NET desktop development tools" />
+    </Prerequisites>
 </PackageManifest>
