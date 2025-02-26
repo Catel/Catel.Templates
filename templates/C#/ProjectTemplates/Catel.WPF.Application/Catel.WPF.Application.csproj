@@ -1,16 +1,15 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/$MsBuildSdkExtrasVersion$">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <AssemblyName>$safeprojectname$</AssemblyName>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
+	<Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup>
     <UseWpf>true</UseWpf>
     <UseWindowsForms>true</UseWindowsForms>
-    <ExtrasEnableImplicitWpfReferences>true</ExtrasEnableImplicitWpfReferences>
-    <ExtrasEnableImplicitWinFormsReferences>true</ExtrasEnableImplicitWinFormsReferences>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -27,17 +26,10 @@
 
   <ItemGroup>
     <PackageReference Include="Catel.MVVM" Version="$CatelVersion$" />
-    <PackageReference Include="Catel.Fody" Version="4.5.0" PrivateAssets="all" />
-    <PackageReference Include="Fody" Version="6.2.4" PrivateAssets="all" />
-    <PackageReference Include="ModuleInit.Fody" Version="2.1.0" PrivateAssets="all" />
-    <PackageReference Include="Obsolete.Fody" Version="5.2.1" PrivateAssets="all" />
-    <PackageReference Include="WpfAnalyzers" Version="2.2.0.2" PrivateAssets="all">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
+    <PackageReference Include="Catel.Fody" Version="4.9.0" PrivateAssets="all" />
+    <PackageReference Include="Fody" Version="6.9.1" PrivateAssets="all" />
+    <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
+    <PackageReference Include="Obsolete.Fody" Version="5.3.1" PrivateAssets="all" />
   </ItemGroup>
 
   <Import Project="$(MSBuildProjectDirectory)\..\Directory.build.shared.explicit.props" Condition="Exists('$(MSBuildProjectDirectory)\..\Directory.build.shared.explicit.props')" />
@@ -78,7 +70,7 @@
         
         <!-- CSharp language -->
         <PropertyGroup>
-          <LangVersion>7.3</LangVersion>
+          <LangVersion>latest</LangVersion>
         </PropertyGroup>
 
         <!-- Enforce portable pdb format -->
@@ -132,53 +124,18 @@
           </Compile>
         </ItemGroup>
         
-        <!-- .NET Core app 3.0 -->
-        <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' ">
-          <DefineConstants>$(DefineConstants);NETCORE;NETCORE3_0;NETCOREAPP;NETCOREAPP3_0</DefineConstants>
-        </PropertyGroup>
-        
-        <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0' ">
-          <None Remove="Platforms\net\**\*.cs;Platforms\net\**\*.xaml;Platforms\net\**\*.xaml.cs" />
-          <Compile Include="Platforms\net\**\*.cs" DependentUpon="%(Filename)" />
-          <Page Include="Platforms\net\**\*.xaml" SubType="Designer" Generator="MSBuild:Compile" />
-          <Compile Update="Platforms\net\**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
-        </ItemGroup>
-        
-        <!-- .NET 4.6 -->
-        <PropertyGroup Condition=" '$(TargetFramework)' == 'net46' ">
-          <EnableWpfProjectSetup>true</EnableWpfProjectSetup>   
-          <DefineConstants>$(DefineConstants);NET;NET46;NET460</DefineConstants>
-        </PropertyGroup>
-        
-        <PropertyGroup Condition=" '$(TargetFramework)' == 'net461' ">
-          <EnableWpfProjectSetup>true</EnableWpfProjectSetup>   
-          <DefineConstants>$(DefineConstants);NET;NET46;NET461</DefineConstants>
-        </PropertyGroup>
-        
-        <PropertyGroup Condition=" '$(TargetFramework)' == 'net462' ">
-          <EnableWpfProjectSetup>true</EnableWpfProjectSetup>
-          <DefineConstants>$(DefineConstants);NET;NET46;NET462</DefineConstants>
-        </PropertyGroup>
-        
-        <ItemGroup Condition=" '$(TargetFramework)' == 'net46' OR '$(TargetFramework)' == 'net461' OR '$(TargetFramework)' == 'net462'">
-          <None Remove="Platforms\net\**\*.cs;Platforms\net\**\*.xaml;Platforms\net\**\*.xaml.cs" />
-          <Compile Include="Platforms\net\**\*.cs" DependentUpon="%(Filename)" />
-          <Page Include="Platforms\net\**\*.xaml" SubType="Designer" Generator="MSBuild:Compile" />
-          <Compile Update="Platforms\net\**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
-        </ItemGroup>
-        
-        <!-- .NET 4.7 -->
-        <PropertyGroup Condition=" '$(TargetFramework)' == 'net47' ">
-          <EnableWpfProjectSetup>true</EnableWpfProjectSetup>
-          <DefineConstants>$(DefineConstants);NET;NET47;NET470</DefineConstants>
-        </PropertyGroup>
-        
-        <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">
-          <None Remove="Platforms\net\**\*.cs;Platforms\net\**\*.xaml;Platforms\net\**\*.xaml.cs" />
-          <Compile Include="Platforms\net\**\*.cs" DependentUpon="%(Filename)" />
-          <Page Include="Platforms\net\**\*.xaml" SubType="Designer" Generator="MSBuild:Compile" />
-          <Compile Update="Platforms\net\**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
-        </ItemGroup>
+		<!-- .NET 8.0 -->
+		<PropertyGroup Condition=" $(TargetFramework.StartsWith('net8.0')) ">
+		  <DefineConstants>$(DefineConstants);NETCORE;NETCORE8;NETCORE8_0;NET8;NET8_0</DefineConstants>
+		</PropertyGroup>
+		 
+		<ItemGroup Condition=" $(TargetFramework.StartsWith('net8.0')) ">
+		  <None Remove="Platforms\net\**\*.cs;Platforms\net\**\*.xaml;Platforms\net\**\*.xaml.cs" />
+		  <Compile Include="Platforms\net\**\*.cs" DependentUpon="%(Filename)" />
+		  <Page Include="Platforms\net\**\*.xaml" SubType="Designer" Generator="MSBuild:Compile" />
+		  <Compile Update="Platforms\net\**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
+		</ItemGroup>
+  
     </When>
   </Choose>
 </Project>

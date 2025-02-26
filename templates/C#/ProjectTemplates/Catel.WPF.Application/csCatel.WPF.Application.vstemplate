@@ -2,7 +2,7 @@
   <TemplateData>
     <TemplateID>Catel.WPF.Application.CSharp</TemplateID>
     <Name>WPF Application with Catel</Name>
-    <Description>A .NET Core 3.1 project template for creating a WPF application using the Catel framework.</Description>
+    <Description>A .NET 8.0 project template for creating a WPF application using the Catel framework.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -19,12 +19,10 @@
   <TemplateContent>
     <CustomParameters>
       <CustomParameter Name="$TemplateName$" Value="Catel.WPF.Application" />
-      <CustomParameter Name="$MsBuildSdkExtrasVersion$" Value="2.0.54" />
-      <CustomParameter Name="$CatelVersion$" Value="5.12.8" />
+      <CustomParameter Name="$CatelVersion$" Value="6.0.6" />
     </CustomParameters>
     <Project TargetFileName="$safeprojectname$.csproj" File="Catel.WPF.Application.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="FodyWeavers.xml">FodyWeavers.xml</ProjectItem>
@@ -33,8 +31,6 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
         <Folder Name="Icons" TargetFolderName="Icons">

@@ -11,23 +11,7 @@ IMPORTANT NOTES !!! READ THIS !!! READ THIS !!! READ THIS !!! READ THIS !!! READ
 ================================================================================================
 
 ------------------------------------------------------------------------------------------------
-1. MsBuildSdkExtras
-------------------------------------------------------------------------------------------------
-
-This project template uses MsBuildSdkExtras (see https://github.com/onovotny/MSBuildSdkExtras) with 
-a fixed value inside the csproj itself (otherwise the project template system will error). You can 
-define a solution-wide version of this library by adding a file named `global.json` in the same 
-directory as the `.sln` with the following content: 
-
-{
-    "msbuild-sdks": {
-        "MSBuild.Sdk.Extras": "$MsBuildSdkExtrasVersion$"
-    }
-}
-
-
-------------------------------------------------------------------------------------------------
-2. Fody
+1. Fody
 ------------------------------------------------------------------------------------------------
 
 This project template includes Fody and some weavers (Catel.Fody, ModuleInit.Fody and Obsolete.Fody)
@@ -41,7 +25,7 @@ If you don't want Fody to be included in the project, follow these steps:
 
 
 ------------------------------------------------------------------------------------------------
-3. Repository Template
+2. Repository Template
 ------------------------------------------------------------------------------------------------
 
 This template is designed to work with RepositoryTemplate (see https://github.com/geertvanhorrik/repositorytemplate).
@@ -54,10 +38,10 @@ in order to make sure the initially created project compiles.
 
 
 ------------------------------------------------------------------------------------------------
-4. Catel version 5.x or higher
+3. Catel version 6.x or higher
 ------------------------------------------------------------------------------------------------
 
-Note that this project template assumes that you are using Catel 5.x.
+Note that this project template assumes that you are using Catel 6.x.
 
 
 For more information and support, visit https://www.catelproject.com
