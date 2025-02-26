@@ -34,7 +34,6 @@ VsExtensions.Add("Catel.ItemTemplates.WPF.UserControl");
 
 VsExtensions.Add("Catel.ProjectTemplates.WPF.Application");
 
-VsExtensions.Add("Orchestra.ProjectTemplates.MahApps.Application");
 VsExtensions.Add("Orchestra.ProjectTemplates.Ribbon.Fluent.Application");
 
 //TestProjects.Add(string.Format("{0}.Tests", GetBuildServerVariable("SolutionName")));
