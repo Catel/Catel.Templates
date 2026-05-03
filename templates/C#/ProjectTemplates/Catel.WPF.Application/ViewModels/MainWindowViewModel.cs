@@ -1,11 +1,13 @@
 ﻿namespace $safeprojectname$.ViewModels
 {
+    using System;
     using Catel.MVVM;
     using System.Threading.Tasks;
 
     public class MainWindowViewModel : ViewModelBase
     {
-        public MainWindowViewModel()
+        public MainWindowViewModel(IServiceProvider serviceProvider)
+            : base(serviceProvider)
         {
         }
 
