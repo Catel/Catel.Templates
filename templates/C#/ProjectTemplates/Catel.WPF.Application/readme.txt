@@ -14,7 +14,7 @@ IMPORTANT NOTES !!! READ THIS !!! READ THIS !!! READ THIS !!! READ THIS !!! READ
 1. Fody
 ------------------------------------------------------------------------------------------------
 
-This project template includes Fody and some weavers (Catel.Fody and LoadAssembliesOnStartup.Fody)
+This project template includes Fody and some weavers (Catel.Fody)
 by default.
 
 If you don't want Fody to be included in the project, follow these steps:
