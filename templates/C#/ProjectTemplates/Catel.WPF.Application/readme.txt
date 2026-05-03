@@ -21,7 +21,6 @@ If you don't want Fody to be included in the project, follow these steps:
 
 1. Remove the PackageReference elements that include 'Fody' in the csproj file
 2. Remove `FodyWeavers.xml`
-3. Remove `ModuleInitializer.cs`
 
 
 ------------------------------------------------------------------------------------------------
