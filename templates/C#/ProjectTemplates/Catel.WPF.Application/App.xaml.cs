@@ -2,46 +2,64 @@
 {
     using System.Windows;
 
+    using $safeprojectname$.Views;
+
     using Catel.IoC;
-    using Catel.Logging;
-    using Catel.Reflection;
-    using Catel.Windows;
+
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
 
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
     {
-        private static readonly ILog Log = LogManager.GetCurrentClassLogger();
+#pragma warning disable IDISP006 // Implement IDisposable
+        private readonly IHost _host;
+#pragma warning restore IDISP006 // Implement IDisposable
+
+        public App()
+        {
+            var hostBuilder = new HostBuilder()
+                .ConfigureServices((hostContext, services) =>
+                {
+                    services.AddCatelCore();
+                    services.AddCatelMvvm();
+
+                    services.AddLogging(x =>
+                    {
+                        x.AddDebug();
+                    });
+
+                    // TODO: Register custom types in the service collection
+                    //services.AddTransient<IMyInterface, MyClass>();
+                });
+
+            _host = hostBuilder.Build();
+
+            IoCContainer.ServiceProvider = _host.Services;
+        }
 
         protected override void OnStartup(StartupEventArgs e)
         {
-#if DEBUG
-            LogManager.AddDebugListener();
-#endif        
-                
-            Log.Info("Starting application");
-
-            // Want to improve performance? Uncomment the lines below. Note though that this will disable
-            // some features. 
-            //
-            // For more information, see http://docs.catelproject.com/vnext/faq/performance-considerations/
-            
-            // Log.Info("Improving performance");
-            // Catel.Windows.Controls.UserControl.DefaultCreateWarningAndErrorValidatorForViewModelValue = false;
-            // Catel.Windows.Controls.UserControl.DefaultSkipSearchingForInfoBarMessageControlValue = true;
-        
-            // TODO: Register custom types in the ServiceLocator
-            //Log.Info("Registering custom types");
-            //var serviceLocator = ServiceLocator.Default;
-            //serviceLocator.RegisterType<IMyInterface, IMyClass>();
-        
-            // To auto-forward styles, check out Orchestra (see https://github.com/wildgums/orchestra)
-            // StyleHelper.CreateStyleForwardersForDefaultStyles();
-
-            Log.Info("Calling base.OnStartup");
-            
             base.OnStartup(e);
+
+            var serviceProvider = _host.Services;
+
+            serviceProvider.CreateTypesThatMustBeConstructedAtStartup();
+
+            var mainWindow = ActivatorUtilities.CreateInstance<MainWindow>(serviceProvider);
+            mainWindow.Show();
+        }
+
+        protected override async void OnExit(ExitEventArgs e)
+        {
+            using (_host)
+            {
+                await _host.StopAsync();
+            }
+
+            base.OnExit(e);
         }
     }
 }

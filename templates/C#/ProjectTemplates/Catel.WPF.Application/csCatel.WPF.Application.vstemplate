@@ -2,7 +2,7 @@
   <TemplateData>
     <TemplateID>Catel.WPF.Application.CSharp</TemplateID>
     <Name>WPF Application with Catel</Name>
-    <Description>A .NET 8.0 project template for creating a WPF application using the Catel framework.</Description>
+    <Description>A .NET 10.0 project template for creating a WPF application using the Catel framework with the .NET hosted application model.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -19,14 +19,13 @@
   <TemplateContent>
     <CustomParameters>
       <CustomParameter Name="$TemplateName$" Value="Catel.WPF.Application" />
-      <CustomParameter Name="$CatelVersion$" Value="6.0.6" />
+      <CustomParameter Name="$CatelVersion$" Value="7.0.0-alpha0205" />
     </CustomParameters>
     <Project TargetFileName="$safeprojectname$.csproj" File="Catel.WPF.Application.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="FodyWeavers.xml">FodyWeavers.xml</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="ModuleInitializer.cs">ModuleInitializer.cs</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
