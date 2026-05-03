@@ -1,10 +1,14 @@
 ﻿namespace $safeprojectname$.Views
 {
+    using Catel.MVVM;
+    using Catel.Services;
     using Orchestra;
-    
+    using System;
+
     public partial class RibbonView 
     {
-        public RibbonView()
+        public RibbonView(IServiceProvider serviceProvider, IViewModelWrapperService viewModelWrapperService, IDataContextSubscriptionService dataContextSubscriptionService)
+            : base(serviceProvider, viewModelWrapperService, dataContextSubscriptionService)
         {
             InitializeComponent();
 
