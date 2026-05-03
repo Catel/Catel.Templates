@@ -1,20 +1,17 @@
 ﻿namespace $safeprojectname$.Views
 {
-    using Catel.MVVM;
-    using Catel.Services;
     using Orchestra;
     using System;
 
     public partial class RibbonView 
     {
-        public RibbonView(IServiceProvider serviceProvider, IViewModelWrapperService viewModelWrapperService, IDataContextSubscriptionService dataContextSubscriptionService)
-            : base(serviceProvider, viewModelWrapperService, dataContextSubscriptionService)
+        protected override void OnLoaded(EventArgs e)
         {
-            InitializeComponent();
+            base.OnLoaded(e);
 
             ribbon.AddAboutButton();
         }
-        
+
         protected override void OnViewModelChanged()
         {
             base.OnViewModelChanged();
