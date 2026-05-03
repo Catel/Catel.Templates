@@ -1,11 +1,13 @@
 ﻿namespace $rootnamespace$
 {
+    using System;
     using Catel.MVVM;
     using System.Threading.Tasks;
 
     public class $safeitemname$ : ViewModelBase
     {
-        public $safeitemname$(/* dependency injection here */)
+        public $safeitemname$(IServiceProvider serviceProvider)
+            : base(serviceProvider)
         {
         }
 

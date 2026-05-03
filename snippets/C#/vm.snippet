@@ -21,7 +21,8 @@
             <Code Language="csharp">
                 <![CDATA[public class $name$ViewModel : ViewModelBase
 {
-    public $name$ViewModel ()
+    public $name$ViewModel (IServiceProvider serviceProvider)
+        : base(serviceProvider)
     {
     }
 
@@ -48,6 +49,9 @@
 }]]>
             </Code>
             <Imports>
+                <Import>
+                    <Namespace>System</Namespace>
+                </Import>
                 <Import>
                     <Namespace>Catel.MVVM</Namespace>
                 </Import>

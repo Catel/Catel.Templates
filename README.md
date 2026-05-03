@@ -92,7 +92,8 @@ Output:
 ```
 public class MainViewModel : ViewModelBase
 {
-    public MainViewModel()
+    public MainViewModel(IServiceProvider serviceProvider)
+        : base(serviceProvider)
     {
     }
 
