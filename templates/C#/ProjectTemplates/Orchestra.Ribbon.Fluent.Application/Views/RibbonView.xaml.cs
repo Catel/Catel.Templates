@@ -1,16 +1,17 @@
 ﻿namespace $safeprojectname$.Views
 {
     using Orchestra;
-    
+    using System;
+
     public partial class RibbonView 
     {
-        public RibbonView()
+        protected override void OnLoaded(EventArgs e)
         {
-            InitializeComponent();
+            base.OnLoaded(e);
 
             ribbon.AddAboutButton();
         }
-        
+
         protected override void OnViewModelChanged()
         {
             base.OnViewModelChanged();
