@@ -14,7 +14,7 @@ IMPORTANT NOTES !!! READ THIS !!! READ THIS !!! READ THIS !!! READ THIS !!! READ
 1. Fody
 ------------------------------------------------------------------------------------------------
 
-This project template includes Fody and some weavers (Catel.Fody, ModuleInit.Fody and Obsolete.Fody)
+This project template includes Fody and some weavers (Catel.Fody and LoadAssembliesOnStartup.Fody)
 by default.
 
 If you don't want Fody to be included in the project, follow these steps:
@@ -38,10 +38,11 @@ in order to make sure the initially created project compiles.
 
 
 ------------------------------------------------------------------------------------------------
-3. Catel version 6.x or higher
+3. Catel version 7.x or higher
 ------------------------------------------------------------------------------------------------
 
-Note that this project template assumes that you are using Catel 6.x.
+Note that this project template assumes that you are using Catel 7.x and uses the .NET hosted
+application model (Microsoft.Extensions.Hosting) instead of the default WPF app model.
 
 
 For more information and support, visit https://www.catelproject.com

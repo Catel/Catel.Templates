@@ -2,7 +2,7 @@
   <TemplateData>
     <TemplateID>Catel.WPF.Application.CSharp</TemplateID>
     <Name>WPF Application with Catel</Name>
-    <Description>A .NET 8.0 project template for creating a WPF application using the Catel framework.</Description>
+    <Description>A .NET 8.0 project template for creating a WPF application using the Catel 7 framework with the .NET hosted application model.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -19,7 +19,7 @@
   <TemplateContent>
     <CustomParameters>
       <CustomParameter Name="$TemplateName$" Value="Catel.WPF.Application" />
-      <CustomParameter Name="$CatelVersion$" Value="6.0.6" />
+      <CustomParameter Name="$CatelVersion$" Value="7.0.0-alpha0205" />
     </CustomParameters>
     <Project TargetFileName="$safeprojectname$.csproj" File="Catel.WPF.Application.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt" OpenInEditor="true">Readme.txt</ProjectItem>
