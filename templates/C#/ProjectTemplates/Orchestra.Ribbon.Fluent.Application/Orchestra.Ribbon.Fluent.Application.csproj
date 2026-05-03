@@ -30,7 +30,6 @@
     <PackageReference Include="Catel.MVVM" Version="$CatelVersion$" />
     <PackageReference Include="Catel.Fody" Version="4.1.0" PrivateAssets="all" />
     <PackageReference Include="Fody" Version="5.1.1" PrivateAssets="all" />
-    <PackageReference Include="ModuleInit.Fody" Version="2.0.0" PrivateAssets="all" />
     <PackageReference Include="Obsolete.Fody" Version="5.0.0" PrivateAssets="all" />
     <PackageReference Include="Orchestra.Shell.Ribbon.Fluent" Version="$OrchestraVersion$" />
     <PackageReference Include="WpfAnalyzers" Version="2.2.0.2" PrivateAssets="all">
@@ -80,7 +79,7 @@
         
         <!-- CSharp language -->
         <PropertyGroup>
-          <LangVersion>7.3</LangVersion>
+          <LangVersion>9</LangVersion>
         </PropertyGroup>
 
         <!-- Enforce portable pdb format -->
